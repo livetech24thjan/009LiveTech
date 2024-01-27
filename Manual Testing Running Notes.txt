@@ -1,0 +1,1743 @@
+					
+Manual Testing Running Notes :
+
+
+Full stack 							tools						Testing
+(java , python , .net ...)			powerBI , tableau 		
+
+Developer					
+					
+					
+QA Team :
+
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login					
+
+
+								Testing
+								
+			Functional 					 non-Functional					
+					
+					
+					
+Functional Tester :
+
+					Functional Testing 
+					
+					
+			Manual 						Automation
+										- Selenium
+										- Cypress
+										- Playwright 
+										- TOSCA 
+										
+										
+										
+Web apps 
+Mobile apps 
+
+Appium  
+
+
+Selenium + Java :
+
+40 to 50 % Core Java 
+
+Manual Testing : 
+
+4 Modules :
+
+1) Software testing concepts 
+
+2) Software testing project 
+
+3) Agile and Jira tool 
+
+4) SQL (mysql ) 
+
+******************************************************
+#####   Module 1 : Software Testing Concepts    #####
+******************************************************
+
+Software : 
+
+set of instructions or programs to accomplish some tasks
+
+e.g 
+
+Calculator app , whatsapp 
+
+Softwares :
+
+1. System software
+
+e.g Operating System , drivers etc 
+
+2. Programming software
+
+e.g  compilers , interpreters ,debugging tools 
+
+3. Application softwares
+
+e.g Web Apps , mobile apps , mainframes , silverlite apps  etc ...
+
+
+
+Testing
+
+is a process of checking developed software/apps is working as per client business requirment or not
+
+
+-> to find defects or bugs 
+
+
+prime motto : 
+
+to deliver quality and risk free product 
+
+
+what we have to check in now-a-day apps (Web/Mobile) applications :
+
+- Functional Testing
+- GUI Testing 
+- Usability Testing
+- Load Testing 
+- Performance Testing
+- Security Testing
+- Compatability Testing  etc ...
+
+----------------------
+Terminologies :
+----------------------
+
+Project : If a s/w application designed for specific customer the it is called Project
+
+Product : If a s/w application designed for multiple customers the it is called Product
+
+Error : Any incorrect human action that produces wrong results 
+
+Defect/Bug/Fault: Deviation b/n expected behaviour of the system to actual behaviour 
+
+Failure : If the end user identifies a problem while using the app 
+
+
+------------------------
+why do a s/w application will have defects ?
+
+1) Incorrect requirments
+2) wrong design
+3) wrong coding
+4) poor coding 
+5) complex architecture
+6) work pressure and time pressure 
+7) Frequent changing buisiness requirment
+
+S/w Testing = Verification + Validation
+
+Positive Testing :
+
+
+Negative Testing : 
+-----------------------------------------
+Roles and Responsibilities of Tester : 
+-------------------------------------------
+1) understand the applictaion under test / Project 
+i.e Domain Knowledge 
+
+Banking Domain
+
+Insurance Domain 
+
+Ecommerce 
+
+Hotel/Flight booking
+
+Health Care Domain
+
+2) Formal Testing (Writing Test cases and Execute Test cases)
+
+3) Adhoc Testing / Informal Testing (No Test cases)
+
+4) Finding Defects & Report to Developers 
+
+5) ReTesting & Regression Testing 
+
+6) Develop Automation Test Scripts 
+
+7) Excuting Automation Scripts 
+
+8) Analys Results 
+
+9) Preapre Test Reports 
+
+
+==============================================
+Principles of Software Testing 
+==============================================
+1) Exhaustive Testing is Impossible 
+
+complete testing(whole test data) is not good
+
+If we test a functionality with all possible valid and invalid inputs then it is called Exhaustive tetsing.
+
+for e.g ,In banking app,  If we check login with all registered users(present in Database) then it is called  
+Exhaustive testing which is practically not possible.
+
+Instead , check login with one or two users from each category (Customer , banker and Admin) to make sure
+login module is correctly working or not.
+
+2) Defect Clustering 
+
+sometimes ,  a small functionlity may produce more number of defects when compared with a bigger functionality.
+
+Registration Functionality vs Payment Gateway 
+
+here Registration Functionality may have less no of defects compared to Payment gateway
+put more effort on "Payment gateway Functionality" 
+
+
+3)Pesticide Paradox 
+
+If prepared test cases not able to find defects (or not giving better qauality) , 
+add few more test cases (negative test cases) or modify the existing test cases 
+
+
+4)Early Testing 
+
+Conducting testing as soon as possible in the developmeent life cycle 
+
+5) Testing is application dependant or sometimes testing is situation dependent
+
+Test approach slightly vary from project to project.
+
+For e.g Emi Calculator app : there is no need of NFT(Non functional testing like performance , load etc)
+
+but for e-commerce app :(ebay/amazon): there is  need of NFT(Non functional testing like performance , load etc)
+
+testing is situation dependent:
+
+sometimes, test approach may slighty change based on the time availablity , resource availablity and cost.
+
+i.e If sufficient time availablity is thers then we go for formal testing 
+if no time we go for priortiy based testing or Adhoc testing(no test cases)
+
+6) Testing should show presence of defects 
+
+Always testing should be carried out with an intention of finding defects because the majoir goal of tetsing
+is to find defects before customer finds them.
+This can be achived by doing negative testing.
+
+7) Absence of defects is a fallacy 
+
+It is False statement to say there is defect free product.
+
+
+-----------------------------------
+SDLC Models
+-----------------------------------
+					
+							SDLC Models
+							
+							
+			1.	Sequential                      2. Incremental/Iterative Models
+			
+			
+							
+Sequential Models :
+
+1) Water fall Models
+2) V model 
+
+
+
+
+2. Incremental/Iterative Models
+
+Big Project or Maintenance projects 
+
+
+i) RAD (Rapid Application Development)
+ii)Prototype 
+iii)Spiral
+iv) Agile 
+
+
+RAD (Rapid Application Development) Model 
+
+Prototype Model 
+
+-> if a customer provides a reference application
+-> if the customer is not clear on requirments
+
+
+Spiral Model : 
+
+
+Software Testing :
+
+1) Verification or Static Testing
+
+Review : 
+
+Types of Reviews :
+
+1. Requirement review
+
+domain experts/Business analyst
+
+2. Design Reviews
+
+3. Code Reviews 
+
+4. Test case reviews 
+
+5. Formal Reviews 
+
+Inspection :
+
+Audit : 
+
+6. Infromal Reviews 
+
+7. Peer reviews 
+
+Walk Through :
+
+Knowledge Transfer Sessions (KT's) 
+
+
+Validation or Dynamic Testing :
+Unit testing :
+
+A smallest part in source code of application such as programs or methods / functions etc
+is called units
+
+Testing conducted on this units is called unit testing
+
+Integration Testing : 
+
+once all units are tested , programs are combined together
+
+Testing conducted on overall output is called Integration testing.
+
+
+White Box Testing :
+
+Testing conducted on source code by developers
+
+
+Blackbox Testing :
+
+
+System testing :
+
+Once Integration testing is done , the source code is converted into exectable format
+called Build or exe File or ipa file or apk file and deployment into system.
+
+Testing conducted on System or deployed code is called Blackbox testing 
+
+System testing will be conducted in some environment :
+
+Dev Environment or Dev Servers
+
+TEst Environment or QA Servers or SIT (System Integration Test Environment)
+
+UAT : User Acceptance Testing 
+
+the code is deployed in seperate servers or machine 
+
+and will be tested by client or QA people
+
+
+Aplha Testing : 
+
+if testing is carried in company premises 
+
+BEta Testing : 
+
+A final round of testing out at client premises 
+
+Functional System testing types :
+
+1) Smoke Testing : 
+
+build : an executable file  after compiling the source code 
+
+it can be URL or .exe or .apk or .ipa file. 
+
+It is a kind of quick test or rough test performed on given build or application 
+to decide whether it is eligible for further detail testing or not
+
+
+what to test?
+
+i) we have to check all major features are available or not
+ii) we have to check the given application consistently operable or not
+
+Note: Smoke testing is carried out to make sure whether given application
+is testable or not. Not to find defect.
+
+2) Formal Testing:
+
+If we test a s/w application by following proper documents or procedures (Test Cases)
+
+
+In simple words, writing test cases and executing test cases is called Formal Testing .
+
+3) Ad hoc Testing 
+
+If we you test a s/w application without following proper documents or procedures (No Test Cases)
+
+Note : Ad hoc Testing will be performed after Formal Testing if we have enough time.
+
+4) Priority Based Testing: 
+
+It is a process of deciding what to test first what to test next, what to test last 
+then we execute the tests in same order
+
+5) Retesting : 
+
+It is a process of validating reported defects/bugs are correctly resolved or not on modified build.
+
+
+6) Regression Testing:
+
+It is process of identifying various functionalities in modified build whether there is a change of
+getting side effects. Then testing those functionalities.
+
+7) End to End Testing:
+
+It is process of checking overall functionalities of the system from beginning to end.
+
+This will be carried out by senior testers preferably teste lead to make decision whether to stop
+testing or not.
+
+8) Sanity Testing :
+
+It is process of validating various functionalities depends on bug found in production.
+
+Basically, Sanity testing is subset of regression testing.
+
+7) End to End Testing 
+
+It is process of checking overall functionalities of the system from begining to end.
+
+This will be carried out by seniors testers preferably teste lead to make decission whether to stop
+testing or not .
+
+Special Functional System testing types :
+
+1. Bench Mark Testing 
+
+It is a process of comparing our product with an established product in market.
+
+2. Exploratory Testing 
+
+Exploratory the application, understanding the application then testing it.
+
+in two scenarios, we go for exploratory testing
+
+i) requirement documentation is not available
+ii) if requirements documentation is not providing sufficient inputs
+
+mostly senior domain knowledge will be involved 
+
+3. Monkey or Gorilla or Zig zag 
+
+Wantedly performing uneven operations or zig-zag operations with an intension of
+making system failure is called monkey testing.
+
+Non-Functional Testing types:
+
+Testing performed to check responsiveness, stability and security etc aspects are 
+called Non-Functional testing.
+
+1. Graphical User Interface Testing 
+
+
+2. Usability 
+
+Usability testing is a way to see how easy to use something is by testing it with real users.
+
+
+
+3. Performance Testing 
+
+Responsiveness 
+
+Stability
+
+We check following parameters:
+
+time
+
+speed 
+
+user data volume 
+
+
+
+-> Load Testing 
+
+testing the stability of the system under different loads.
+
+we increase the load gradually and test the s/m
+
+-> Stress Testing
+
+Suddenly increasing the load and checking stability
+
+-> Soak Testing 
+
+-> Volume Testing (user volume)
+
+Here we test the user data volume capacity that s/m can hold 
+
+-> Spike Testing
+		
+these testing are done using tools 
+
+JMeter, load runner, neo load etc ...
+
+
+
+4) Security Testing 
+
+it is the process of testing how much your application is secured.
+
+-> Authentication Testing
+-> Authorization Testing
+-> Cookies Testing
+-> SQL Injection Testing
+
+Authentication Testing:
+User is using valid credentials and accessing the application.
+Authorization Testing:
+User is having limited access rights 
+User Privileges (Read/Write Access)
+
+
+
+SQL Injection Testing:
+Hacking / Phishing:  Stealing your data
+SQL Queries .......................
+unwanted queries injection.......
+
+
+
+5) Compatibility Testing 
+Compatibility testing is a type of software testing that focuses 
+on ensuring that a software application 
+or system functions correctly across different environments, platforms, devices and browsers.
+
+The primary objectives of compatibility testing include:
+
+Platform Compatibility: Testing the software on various operating systems (such as Windows, macOS, Linux)
+and versions of those systems to ensure it works as expected on each platform.
+
+Browser Compatibility: Ensuring that web applications or websites perform consistently 
+across different web browsers (e.g., Chrome, Firefox, Safari, Internet Explorer).
+
+
+6) Globalization Testing or Internationalization Testing or I18N Testing
+
+It is a process of checking end user having a choice to configure different language options
+
+(currency, date and time format)
+
+
+7) Localization Testing or L10N Testing
+
+It's a process of checking default format, currency or language for the product designed for 
+a specific locality of users.
+
+
+8)Recovery Testing:
+
+It's a process of checking how does our application handling unexpected or unpredictable 
+situations like power failure, system crash, internet issues etc ...
+
+
+9)Installation Testing:
+
+It's a process of checking are we able to install the software successfully or not 
+as per guidelines given in installation document.
+
+
+10) Uninstallation Testing:
+
+It's a process of checking are we able to uninstall the s/w successfully or not
+
+also, the data clean up.
+
+
+******************************************
+Module 2 - software testing project*******
+******************************************
+
+Software Test Life Cycle (STLC)
+
+
+Test strategy : 
+
+Test Plan : 
+
+
+Test strategy : High Level document which explains testing activities
+
+Test Plan : Detailed document
+
+IEEE 829 , test plan document
+
+1)Project Overview
+2)Documents References
+3) Scope of Testing 
+  3.1 In Scope (Features to be tested )
+  3.2 Out Scope (Features not to be tested )
+4) Test Strategy
+5) Test Environment
+6) Test Deliverables 
+7) Staffing Plan 
+8) Risk planning and Mitigation
+9) Work Schdules 
+10) Approvals 
+
+
+Test Analysis:
+
+RCN Requirement Clarificaton Notes 
+
+Test Design : 
+
+Requirements -> Login Page 
+
+Test Scenarios -> Features / journeys / functionlities 
+
+what to test ?
+
+TEst Cases -> the steps to test a scenario (Features / journeys / functionlities)  
+
+How to test ?
+
+
+????????????????????????????????
+Assignment 1
+
+Write Test Scnarios for Adactin Login Page using Test Scenario template?
+
+?????????????????????????????????????????????????????????
+Assignment 2
+
+Write Test Scnarios for Facebook Login/Home Page  using Test Scenario template?
+
+?????????????????????????????????????????????????????????
+
+send assignemnets to below email id
+
+flmtechteam.testing@gmail.com 
+
+
+In some projects : (BRS, SRS/FRS etc..)
+
+
+			Requirments
+				|
+			Test Scenario's 
+				|
+			Test Cases 
+			
+In some others projects : (we will have user stories instead of requirments )
+
+			User Story
+				|
+			Test Cases
+			
+			
+Test Case : 
+
+A set of pre conditions , test procedures , input data and expected behaviours of the app/system
+planned by the tester to validate a functionaity/scenario/journey/behaviour in a project.
+
+In simple words , what and how to test unctionaity/scenario/journey/behaviour is called TEst case.
+ 			
+			
+
+?????????????????????????????????????????????????????????
+Assignment 3
+
+
+complete the remaining test case for Login 
+in Adactin Hotel app using Test case template .
+
+https://adactinhotelapp.com/
+
+flmtechteam.testing@gmail.com 
+
+?????????????????????????????????????????????????????????
+			
+Cucumber Studio : 
+
+https://cucumber.io/tools/cucumberstudio/
+
+click on "Try CucumberStudio"
+
+give your email and choose some password
+
+Click on "Learn BDD" and click on "Next "
+
+
+In Cucumber :
+
+Terminologies : 
+
+we don't say "Test Scenarios" and "Test Cases"
+
+instead 	 "Features"    and "Scenarios"
+
+Gherkin Language 
+
+11 keywords 
+
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+
+
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+
+
+
+?????????????????????????????????????????????????????????
+Assignment 4
+
+
+complete the remaining test case for Login 
+in Adactin Hotel app using Cucumber Studio 
+
+https://adactinhotelapp.com/  and send screenshot
+
+flmtechteam.testing@gmail.com 
+
+?????????????????????????????????????????????????????????
+
+
+Test Case Design Techniques :
+
+1) Equivalence Class Partitioning
+2) Boundary value Analysis
+3) Decission Table Testing
+4) State Transition Testing
+5) Error Guessing 
+
+-----------------------------------------
+1) Equivalence Class Partitioning(ECP)
+
+all possible test data 
+
+a,b,c ...x,y,z
+
+A,B,C ... X,Y,Z 
+
+0,1,2...9
+
+! @ # $ % ..+
+
+
+
+2) Boundary value Analysis
+
+3) Decission Table Testing 
+or
+Cause Effect Table
+or 
+Business rule testing 
+                                                n
+if there are n inputs then no of rules will be 2
+
+????????????????????????????????????????????????????????
+Assignment : 
+
+for food delivery app 
+
+
+3 inputs 
+
+New Customer (30%)
+Old Cutomer (15%)
+Coupon (25%)
+
+come up with test cases using Decission table testing
+
+and send screenshot
+
+flmtechteam.testing@gmail.com 
+???????????????????????????????????????????????????
+
+
+4) State Transition Testing
+
+
+?????????????????????????????????????
+Assignment 6:
+
+In https://adactinhotelapp.com/ use 
+State Transition Testing to write  test cases for booking a hotel 
+
+comple state tranisition diagram either in notebook or mspaint 
+
+and Test cases in Excel 
+
+flmtechteam.testing@gmail.com 
+
+???????????????????????????????????????????????????????????????
+
+5) Error Guessing
+
+based on experience 
+
+RTM : Requirement Tracability Matrix
+
+
+
+Test Execution Phase :
+
+
+build : a compile form or executable file or url or .apk file or .ipa file 
+
+
+https://qa1.adactinhotelapp.com/
+
+1. Build Deployment
+2. Build Acceptance Testing
+3. Execting Test cases
+4. Documenting and reporting defects 
+5. Conducting retesting on modified build
+6. Conducting regression testing on modified build
+7. Conducting end-to-end testing on final build
+
+
+1. Build Deployment 
+
+i) SRN Software Release Notes 
+ - new features added
+ - dev team
+ - qa team 
+ - build path 
+ - known issues 
+ - Approvals 
+ 
+ii) DD (Deployment Document)
+
+ - h/w requirements
+ - s/w requirements
+ - installation procedures
+
+2. Build Acceptance Testing or Smoke Testing 
+
+3. Execting Test cases
+
+ 
+ Defect Template :
+ 
+ 
+Defect #
+Defect Summary : high level description
+
+Defect Description : some detailed info about defect 
+
+Reproducible (Y/N) : Y 
+
+Reproducible Steps : 
+
+https://studio.cucumber.io/projects/418067/test-plan/folders/3567018/scenarios/11751539
+
+
+Defect Severity :  The impact of defect or how serious the defect is 
+
+Blocker  or Show Stopper 
+
+e.g Application crash, login not working etc ..
+
+
+Critical : The main or basic functionaity/scenario/journey/behaviour not working
+
+e.g  Funds Transfer in banking app
+
+  Ordering or placing an order in Food delevirey app 
+
+Major : It causes some undesirable behaviour , still feature is working 
+
+e.g after booking cab there is no confirmation 
+
+Minor : it won't cause break down or major deviations 
+
+e.g spelling mistakes , wrong allignmnets , look and feel issues 
+
+
+
+Defect Priority : decided by developer 
+
+The order in which defect to be resolved 
+
+
+Attachements : 
+
+Defect Status
+Detected By
+Detected in version
+Fixed By
+Fixed Date
+Date Of closure
+
+
+bug life cycle or Defect Life Cycle :
+
+
+?????????????????????????????????????
+Assignment 7:
+
+In https://adactinhotelapp.com/ 
+
+find atleast 5 defects and fill the defect teamplate
+
+in Excel 
+
+flmtechteam.testing@gmail.com 
+
+???????????????????????????????????????????????????????????????
+
+
+
+Low Severity and High Priority
+
+e.g Incorrect Logo or Incorrect Company title
+
+High Severity and Low Priority
+
+e.g a major feature/issue belonging to future release
+
+e.g   Help Center in Home Page not working 
+
+
+Low Severity and Low Priority
+
+e.g a spelling mistake in a page which is not navigated by user 
+
+
+high severity and high priority
+ 
+e.g Login Functionality not working 
+ 
+Test Closure :
+
+Test Case Summary reports
+
+Defect Summary Reports 
+ 
+ 
+
+Module 3: Agile MEthodology  and JIRA tool 
+
+Agile Methodology /Agile Principle 
+
+it is a SDLC model (Iterative and Incremental approach)
+
+Agile Principles /Features :
+
+1. customer no need to wait for long time 
+2. develop , test and release for every iteration 
+3. we can accomodate / accept requirement changes 
+4. There will be a good communication between customer , BA , Developers ,testers 
+
+Dis Adavantages :
+
+Less focus on design and Documention 
+
+Framesworks in Agile :
+
+Scrum
+
+Kanban
+
+Scaled Agile 
+
+etc ..
+
+Scrum Framework : 
+
+- Scrum includes group of people called "Scrum Team" or "Squads"
+
+ Scrum Team contains 5-9 members 
+ 
+ Roles or Scrum Team members : (12)
+ 
+ 1.Product Owner(1)
+ 2.Scrum Master(1)
+ 3.Business Analyst(1)
+ 4.Dev Team (4)
+	- FE dev (UI developers)
+		-web
+		-Mobile 
+			-iOS
+			-Android
+	- BE dev (Full stack developers)
+ 5.QA Team (3)
+	- Manual Tester ( Web /API /Mobile)
+	- Automation (Selenium /Appium/Rest Assured)
+ 6.Dev ops(1)
+ 7.UX designers (1)
+ 
+Product Owner : (Product Manager / like Delivery Manager in sevice based)
+
+- Define the features in form of User Story of the Product (from customer)
+
+- prioritize the features accroding to buisiness need or market value 
+
+- Adjust the features or priorities for every iteration as needed 
+
+- accept or reject work results 
+
+Scrum Master:
+
+more knowledge about scrum activities or practicises 
+
+Facilitate and drive the agile process 
+
+Business Analyst:
+
+he/she will have more knowledge about the product or business domain 
+
+Scrum Terminologies :
+
+1. User Story : A feature / module /behaviour in a software or app 
+
+2. Epic : collection of user stories 
+
+3. Product Backlog : List of user stories prepared by PO 
+
+4. Sprint : period/span of time to complete user story 
+            2-4 weeks
+
+
+5. Sprint Backlog : List of committed stories for Specific Sprint 
+
+
+Scrum Ceremonies / meetings :
+
+i) Scrum Planning :
+
+
+PO, SM , Dev , QA , BA etc ..
+
+2 weeks - 2*5 days = 10days 10*6 points = 60 points 
+
+for 4 dev 4*60 = 240 points 
+
+
+Story point : 
+
+Rough estimate to complete a user story 
+
+in the form fibonnaci series 
+
+0 1 1 2 3 5 8 13 
+
+1 story point - 1 hr  / 1 day (6hrs) 
+
+
+e.g 
+
+
+login - web  5 points 
+
+login  - iOS
+
+login - android     
+
+registration
+
+Search Hotel 
+
+
+ii) Daily Scrum Meeting or Daily Standup Meeeting  (DSM) or status call etc ..
+
+
+15 to 30 minutes 
+ - what did you yesterday ?
+ - what's the plan for today ?
+ - are there any impediments ?
+ 
+iii) Sprint Review or Sprint Demo :
+
+Client /Customer , PO , SM , Dev , BA's, QA's etc ..
+
+iv) Sprint Retrospective : 
+
+ - want went well in previous print
+ - want did't go well
+ - actions items 
+ 
+ 
+v) Backlog Grooming (in mid of sprint)
+ 
+
+Burndown Chart :  how much work remaining in the sprint 
+
+ 
+ ***********************************
+ JIRA tool 
+ ***********************************
+ 
+ Project Management tool 
+ 
+ Get Jira Software for Free
+ 
+ https://www.atlassian.com/try/cloud/signup?bundle=jira-software&edition=free&signupSource=skipBundles
+ 
+ 
+https://flm13thdec.atlassian.net/jira/your-work
+
+
+
+
+reyaz0806
+reyaz123
+
+
+Older 						Agile or Newer 
+
+Requirements 				Requirements		
+|							|
+Test Scenarios				User Stories or Features 
+|							|
+Test Cases 					Scenario 
+
+
+Bug Template in JIRA :
+
+Steps to reproduce : 
+
+Login to App
+
+Enter valid user name and password
+
+Select Location as Sydney
+
+Enter CheckinDate (Past date e.g 08/01/0024)
+
+Enter CheckoutDate (Past date e.g 09/01/0024)
+
+click on “Search” button
+
+Test Data : 
+
+username reyaz0806
+
+password reyaz123
+
+ 
+
+Actual Result : 
+
+Navigated to Select Hotel page
+
+Expected Result : 
+
+In-Line Error as below 
+
+“Check-In Date should be either Today or Later Date”
+
+Build Version : 1.0.1
+
+Platform: Windows
+
+Environment: Test (QA1)
+
+Browser : chrome /firefox/edge 
+
+SQL or Database Testing :
+
+Performing operations in FrontEnd and validating at backend (DB) 
+
+
+How to install and configure MySQL server :
+
+
+https://www.mysql.com/downloads/
+
+Click on below link 
+"MySQL Community (GPL) Downloads »"
+
+Click on below link 
+"MySQL Installer for Windows"
+
+MySQL Installer 8.0.35
+
+Click on download button of any one of the below
+
+
+Windows (x86, 32-bit), MSI Installer (mysql-installer-web-community-8.0.35.0.msi)
+
+or
+
+Windows (x86, 32-bit), MSI Installer ((mysql-installer-community-8.0.35.0.msi)
+
+In next page , click on "
+No thanks, just start my download."
+
+
+to connect :
+
+go to below location C:\Program Files\MySQL\MySQL Server 8.0\bin and give below command 
+
+mysql -u root -p 
+
+
+								SQL
+			 ___________________________________________________
+			|						|							|
+								
+		DDL							DML							DCL 							
+		- CREATE				- INSERT					  - Begin Transaction
+		- ALTER					- UPDATE					  - Commit
+		- DROP 					- DELETE/TRUNCATE			  - rollback 
+								- SELECT 
+									- JOINS
+									- SUB QUERY
+
+CREATE database <database name>;
+
+e.g
+
+create database sampledb;
+
+create table emp 
+( column1  datatype[size] [constraints]
+  column2  datatype[size] [constraints]
+	:
+	:
+  columnN  datatype[size] [constraints]);
+
+CREATE TABLE emp (
+  empno decimal(4,0) NOT NULL,
+  ename varchar(10) default NULL,
+  job varchar(9) default NULL,
+  mgr decimal(4,0) default NULL,
+  hiredate date default NULL,
+  sal decimal(7,2) default NULL,
+  comm decimal(7,2) default NULL,
+  deptno decimal(2,0) default NULL
+);
+
+
+CREATE TABLE dept (
+  deptno decimal(2,0) default NULL,
+  dname varchar(14) default NULL,
+  loc varchar(13) default NULL
+);
+
+Insert into tablename (column list) values(value list);
+
+INSERT INTO emp VALUES ('7369','SMITH','CLERK','7902','1980-12-17','800.00',NULL,'20');
+INSERT INTO emp VALUES ('7499','ALLEN','SALESMAN','7698','1981-02-20','1600.00','300.00','30');
+INSERT INTO emp VALUES ('7521','WARD','SALESMAN','7698','1981-02-22','1250.00','500.00','30');
+INSERT INTO emp VALUES ('7566','JONES','MANAGER','7839','1981-04-02','2975.00',NULL,'20');
+INSERT INTO emp VALUES ('7654','MARTIN','SALESMAN','7698','1981-09-28','1250.00','1400.00','30');
+INSERT INTO emp VALUES ('7698','BLAKE','MANAGER','7839','1981-05-01','2850.00',NULL,'30');
+INSERT INTO emp VALUES ('7782','CLARK','MANAGER','7839','1981-06-09','2450.00',NULL,'10');
+INSERT INTO emp VALUES ('7788','SCOTT','ANALYST','7566','1982-12-09','3000.00',NULL,'20');
+INSERT INTO emp VALUES ('7839','KING','PRESIDENT',NULL,'1981-11-17','5000.00',NULL,'10');
+INSERT INTO emp VALUES ('7844','TURNER','SALESMAN','7698','1981-09-08','1500.00','0.00','30');
+INSERT INTO emp VALUES ('7876','ADAMS','CLERK','7788','1983-01-12','1100.00',NULL,'20');
+INSERT INTO emp VALUES ('7900','JAMES','CLERK','7698','1981-12-03','950.00',NULL,'30');
+INSERT INTO emp VALUES ('7902','FORD','ANALYST','7566','1981-12-03','3000.00',NULL,'20');
+INSERT INTO emp VALUES ('7934','MILLER','CLERK','7782','1982-01-23','1300.00',NULL,'10');
+INSERT INTO emp (empno,'reyaz','hiredate') values(
+
+------------------------------
+Datatypes in sQL :
+
+
+INT(size) 
+
+DECIMAL(size, d)
+
+VARCHAR(size)
+
+DATE
+
+
+
+https://justinsomnia.org/2009/04/the-emp-and-dept-tables-for-mysql/
+
+
+Select : 
+
+Select [All/distinct] [Top n] * or column list from tablename 
+[WHERE  condition]
+[Group By columns]
+[Having Condition]
+[Order By column[s]] [ASC/DESC] [LIMIT N];
+
+= > >= < <= <> != 
+
+aggregate functions : 
+
+SUM AVG MIN MAX 
+
+to find the emp who is drawing max salary 
+
+select * from emp where sal=(select max(sal) from emp);
+
+https://chat.whatsapp.com/Gy1PWaOL0Oa29l1Ig7qgvo
+
+
+TO find 
+
+Alias : giving some name to a view or a logical table
+
+
+write a sql query to find 2nd highest salary from emp table ?
+
+select * from emp limit 2;
+
+select * from emp where deptno NOt IN (10,20);
+
+select * from emp where deptno  <> 10;
+
+select sal from (select * from emp ORDEr by sal desc limit 2) as emp1 order by sal ASC limit 1;
+
+
+
+select * from emp WHERE deptno=10 AND sal>2000;
+
+
+select ename from emp where sal=(select max(sal) from emp);
+
+
+---------
+Finding nth Highest Salary
+
+
+Method 1: write a sql query to find 2nd highest salary from emp table ?
+
+select sal from (select * from emp ORDER by sal DESC LIMIT 2) as emp1 ORDER By sal LIMIT 1;
+
+select sal from (select * from emp ORDER by sal DESC LIMIT 3) as emp1 ORDER By sal LIMIT 1;
+
+inner query
+
+select distinct(sal)  from emp ORDER by sal DESC LIMIT 3;
+
+select sal from (select distinct(sal)  from emp ORDER by sal DESC LIMIT 3) as emp1 ORDER By sal LIMIT 1;
+
+Method 2 :
+
+
+select max(sal) from emp where sal <> (select max(sal) from emp);
+
+
+Finding nth Lowest Salary:
+
+select sal from (select distinct(sal) from emp order by sal limit 2) as emp1 ORDER By sal DESC LIMIT 1;
+select distinct(sal) from emp order by sal limit 2;
+
+
+????????
+who is taking 2nd highest salary 
+
+select ename from emp where sal=(select sal from (select * from emp ORDER by sal DESC LIMIT 2) as emp1 ORDER By sal LIMIT 1);
+
+
+-----------------------------
+
+JOINS 
+
+to retrieve data from multiple tables
+
+JOIN Types :
+
+1. Inner Join
+
+2. Left Outer Join 
+
+3. Right Outer Join 
+
+4. Full Outer Join
+
+5. CROSS Join
+
+
+Syntax : 
+
+
+SELECT  Table1.column1,Table1.column2 ......
+		Table2.column1,Table2.column2 ......
+		from Table1 <join type> Table2 
+		on join condition;
+		
+		
+Inner Join :
+
+SELECT  emp.empno,emp.ename,emp.deptno,
+		dept.dname,dept.loc
+		from emp JOIN dept 
+		on emp.deptno=dept.deptno;
+
+mysql> SELECT  emp.empno,emp.ename,emp.deptno,
+    ->          dept.dname,dept.loc
+    ->          from emp JOIN dept
+    ->          on emp.deptno=dept.deptno;
++-------+--------+--------+------------+----------+
+| empno | ename  | deptno | dname      | loc      |
++-------+--------+--------+------------+----------+
+|  7369 | SMITH  |     20 | RESEARCH   | DALLAS   |
+|  7499 | ALLEN  |     30 | SALES      | CHICAGO  |
+|  7521 | WARD   |     30 | SALES      | CHICAGO  |
+|  7566 | JONES  |     20 | RESEARCH   | DALLAS   |
+|  7654 | MARTIN |     30 | SALES      | CHICAGO  |
+|  7698 | BLAKE  |     30 | SALES      | CHICAGO  |
+|  7782 | CLARK  |     10 | ACCOUNTING | NEW YORK |
+|  7788 | SCOTT  |     20 | RESEARCH   | DALLAS   |
+|  7839 | KING   |     10 | ACCOUNTING | NEW YORK |
+|  7844 | TURNER |     30 | SALES      | CHICAGO  |
+|  7876 | ADAMS  |     20 | RESEARCH   | DALLAS   |
+|  7900 | JAMES  |     30 | SALES      | CHICAGO  |
+|  7902 | FORD   |     20 | RESEARCH   | DALLAS   |
+|  7934 | MILLER |     10 | ACCOUNTING | NEW YORK |
++-------+--------+--------+------------+----------+
+
+
+2. Left Outer Join :
+
+SELECT  emp.empno,emp.ename,emp.deptno,
+		dept.dname,dept.loc
+		from emp LEFT OUTER JOIN dept 
+		on emp.deptno=dept.deptno;
+
+INSERT INTO emp VALUES ('8900','MIKE','CLERK','7782','1983-01-24','1350.00',NULL);
+
+3. Right Outer Join :
+
+SELECT  emp.empno,emp.ename,emp.deptno,
+		dept.deptno,dept.dname,dept.loc
+		from emp RIGHT OUTER JOIN dept 
+		on emp.deptno=dept.deptno;
+		
+
+select * from emp order by sal desc
+
+To find 2nd highest salary :
+
+select sal from (select * from (select * from (select * from emp order by sal desc) as emp1
+				limit 2) as emp2 order by sal asc) as emp3 limit 1;
+				
+select * from (select * from (select * from emp order by sal desc) as emp1 limit 2) as emp2 order by sal asc
+
+
+select * from (select * from (select * from emp order by sal desc) as emp1 limit 3) as emp2 order by sal asc as emp3 limit 1;
+
+for nth highest salary :
+
+select sal from (select * from (select * from (select distinct(sal) from emp order by sal desc) as emp1 limit n) as emp2 order by sal asc) as emp3 limit 1;
+
+
+select * from (select * from (select * from emp order by sal desc) as emp1 limit 2) as emp2 order by sal asc as emp3 limit 1;
+
+
+select sal from (select * from (select * from (select distinct(sal) from emp order by sal desc) as emp1 limit n) as emp2 order by sal asc) as emp3 limit 1;
+
+for 2nd Lowest Salary :
+
+
+select sal from (select * from (select * from (select distinct(sal) from emp order by sal asc) as emp1 limit 2) as emp2 order by sal desc) as emp3 limit 1;
+
+
+JOINS : 
+
+whe you want to retrive data from multiple tables 
+
+
+Inner Join :
+
+
+
+syntax : 
+
+select table1.column1,table2.column2 .....,
+	   table2.column1,table2.column2......
+	   from table1 <join type> table2 
+	   on join condition;
+	   
+mysql> select * from emp;
++-------+--------+-----------+------+------------+---------+---------+--------+
+| empno | ename  | job       | mgr  | hiredate   | sal     | comm    | deptno |
++-------+--------+-----------+------+------------+---------+---------+--------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1982-12-09 | 3000.00 |    NULL |     20 |
+|  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |
+|  7876 | ADAMS  | CLERK     | 7788 | 1983-01-12 | 1100.00 |    NULL |     20 |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |
++-------+--------+-----------+------+------------+---------+---------+--------+
+14 rows in set (0.00 sec)
+
+mysql> select * from dept;
++--------+------------+----------+
+| deptno | dname      | loc      |
++--------+------------+----------+
+|     10 | ACCOUNTING | NEW YORK |
+|     20 | RESEARCH   | DALLAS   |
+|     30 | SALES      | CHICAGO  |
+|     40 | OPERATIONS | BOSTON   |
++--------+------------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from emp inner join no emp.deptno=dept.deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.deptno=dept.deptno' at line 1
+mysql> select emp.*,dept.* from emp inner join no emp.deptno=dept.deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.deptno=dept.deptno' at line 1
+mysql> select emp.*,dept.* from emp inner join on emp.deptno=dept.deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on emp.deptno=dept.deptno' at line 1
+mysql> select * from emp inner join on emp.deptno=dept.deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on emp.deptno=dept.deptno' at line 1
+mysql> select * from emp inner join dept on emp.deptno=dept.deptno;
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+| empno | ename  | job       | mgr  | hiredate   | sal     | comm    | deptno | deptno | dname      | loc      |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1982-12-09 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7876 | ADAMS  | CLERK     | 7788 | 1983-01-12 | 1100.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+14 rows in set (0.01 sec)
+
+mysql> select * from emp left outer join dept on emp.deptno=dept.deptno;
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+| empno | ename  | job       | mgr  | hiredate   | sal     | comm    | deptno | deptno | dname      | loc      |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1982-12-09 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7876 | ADAMS  | CLERK     | 7788 | 1983-01-12 | 1100.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+14 rows in set (0.00 sec)
+
+mysql> INSERT INTO emp VALUES ('8888','RAVI','CLERK','7782','1982-01-23','1300.00',NULL,null);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from emp inner join dept on emp.deptno=dept.deptno;
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+| empno | ename  | job       | mgr  | hiredate   | sal     | comm    | deptno | deptno | dname      | loc      |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1982-12-09 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7876 | ADAMS  | CLERK     | 7788 | 1983-01-12 | 1100.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+14 rows in set (0.00 sec)
+
+mysql> select * from emp left outer join dept on emp.deptno=dept.deptno;
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+| empno | ename  | job       | mgr  | hiredate   | sal     | comm    | deptno | deptno | dname      | loc      |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1982-12-09 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7876 | ADAMS  | CLERK     | 7788 | 1983-01-12 | 1100.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  8888 | RAVI   | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |   NULL |   NULL | NULL       | NULL     |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+15 rows in set (0.00 sec)
+
+mysql> select * from emp right outer join dept on emp.deptno=dept.deptno;
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+| empno | ename  | job       | mgr  | hiredate   | sal     | comm    | deptno | deptno | dname      | loc      |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |     10 | ACCOUNTING | NEW YORK |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7876 | ADAMS  | CLERK     | 7788 | 1983-01-12 | 1100.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1982-12-09 | 3000.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |     20 | RESEARCH   | DALLAS   |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |     30 | SALES      | CHICAGO  |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |     30 | SALES      | CHICAGO  |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |     30 | SALES      | CHICAGO  |
+|  NULL | NULL   | NULL      | NULL | NULL       |    NULL |    NULL |   NULL |     40 | OPERATIONS | BOSTON   |
++-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
+15 rows in set (0.00 sec)
+
+mysql>
+
+
+Wild cards or pattern matching in SQL :
+
+
+% 
+
+_  
+
+
+mysql> select * from emp;
++-------+--------+-----------+------+------------+---------+---------+--------+
+| empno | ename  | job       | mgr  | hiredate   | sal     | comm    | deptno |
++-------+--------+-----------+------+------------+---------+---------+--------+
+|  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |
+|  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |
+|  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |
+|  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |
+|  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |
+|  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |
+|  7788 | SCOTT  | ANALYST   | 7566 | 1982-12-09 | 3000.00 |    NULL |     20 |
+|  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |
+|  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |
+|  7876 | ADAMS  | CLERK     | 7788 | 1983-01-12 | 1100.00 |    NULL |     20 |
+|  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |
+|  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |
+|  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |
+|  8888 | RAVI   | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |   NULL |
++-------+--------+-----------+------+------------+---------+---------+--------+
+15 rows in set (0.00 sec)
+
+mysql> select * from emp where ename like '%K%';
++-------+-------+-----------+------+------------+---------+------+--------+
+| empno | ename | job       | mgr  | hiredate   | sal     | comm | deptno |
++-------+-------+-----------+------+------------+---------+------+--------+
+|  7698 | BLAKE | MANAGER   | 7839 | 1981-05-01 | 2850.00 | NULL |     30 |
+|  7782 | CLARK | MANAGER   | 7839 | 1981-06-09 | 2450.00 | NULL |     10 |
+|  7839 | KING  | PRESIDENT | NULL | 1981-11-17 | 5000.00 | NULL |     10 |
++-------+-------+-----------+------+------------+---------+------+--------+
+3 rows in set (0.00 sec)
+
+mysql> select * from emp where hiredate '____-01-__';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''____-01-__'' at line 1
+mysql> select * from emp where hiredate like '____-01-__';
++-------+--------+-------+------+------------+---------+------+--------+
+| empno | ename  | job   | mgr  | hiredate   | sal     | comm | deptno |
++-------+--------+-------+------+------------+---------+------+--------+
+|  7876 | ADAMS  | CLERK | 7788 | 1983-01-12 | 1100.00 | NULL |     20 |
+|  7934 | MILLER | CLERK | 7782 | 1982-01-23 | 1300.00 | NULL |     10 |
+|  8888 | RAVI   | CLERK | 7782 | 1982-01-23 | 1300.00 | NULL |   NULL |
++-------+--------+-------+------+------------+---------+------+--------+
+3 rows in set (0.00 sec)
+
+mysql> select * from emp where hiredate like '01';
+Empty set (0.00 sec)
+
+mysql> select * from emp where hiredate like '%01';
++-------+-------+---------+------+------------+---------+------+--------+
+| empno | ename | job     | mgr  | hiredate   | sal     | comm | deptno |
++-------+-------+---------+------+------------+---------+------+--------+
+|  7698 | BLAKE | MANAGER | 7839 | 1981-05-01 | 2850.00 | NULL |     30 |
++-------+-------+---------+------+------------+---------+------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from emp where hiredate like '%01%';
++-------+--------+---------+------+------------+---------+------+--------+
+| empno | ename  | job     | mgr  | hiredate   | sal     | comm | deptno |
++-------+--------+---------+------+------------+---------+------+--------+
+|  7698 | BLAKE  | MANAGER | 7839 | 1981-05-01 | 2850.00 | NULL |     30 |
+|  7876 | ADAMS  | CLERK   | 7788 | 1983-01-12 | 1100.00 | NULL |     20 |
+|  7934 | MILLER | CLERK   | 7782 | 1982-01-23 | 1300.00 | NULL |     10 |
+|  8888 | RAVI   | CLERK   | 7782 | 1982-01-23 | 1300.00 | NULL |   NULL |
++-------+--------+---------+------+------------+---------+------+--------+
+4 rows in set (0.00 sec)
+
+============================================
+For Freshers :
+
+two projects : 
+
+Adactin Hotel app : https://adactinhotelapp.com/
+
+
+Ecommerce website : https://demo.opencart.com/
+
+
+for Experience ( 1 to 4 years) : 
+
+project 1 or latest project : (Banking project )
+
+https://www.bankofsingapore.com/homepage.html 
+
+or 
+
+https://www.alahli.com/en-us/Pages/RB-SNB-Home-New.aspx (Saudi NAtional bank)
+
+
+project 2 or older project : (Hotel booking app)
+
+https://www.trivago.in/
+
+
+
+or Project 3 or very old : (Insurance project )
+
+https://www.allstate.com/
+
+
+
+or for Health care 
+
+https://regalials.com/
+
+
