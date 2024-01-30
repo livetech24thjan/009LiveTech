@@ -408,7 +408,7 @@ getting side effects. Then testing those functionalities.
 
 It is process of checking overall functionalities of the system from beginning to end.
 
-This will be carried out by senior testers preferably teste lead to make decision whether to stop
+This will be carried out by senior testers preferably test lead to make decision whether to stop
 testing or not.
 
 8) Sanity Testing :
