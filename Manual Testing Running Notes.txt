@@ -975,12 +975,13 @@ Scrum Framework :
 
  Scrum Team contains 5-9 members 
  
- Roles or Scrum Team members : (12)
+ Roles or Scrum Team members : (14)
  
  1.Product Owner(1)
  2.Scrum Master(1)
  3.Business Analyst(1)
- 4.Dev Team (4)
+ 4.Solution Architect(1)
+ 5.Dev Team (5)
 	- FE dev (UI developers)
 		-web
 		-Mobile 
@@ -1101,7 +1102,10 @@ Burndown Chart :  how much work remaining in the sprint
  https://www.atlassian.com/try/cloud/signup?bundle=jira-software&edition=free&signupSource=skipBundles
  
  
-https://flm13thdec.atlassian.net/jira/your-work
+https://livetech24thjan.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog
+
+ 
+
 
 
 
